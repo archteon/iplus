@@ -1,0 +1,37 @@
+{{ get_header() }}
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                                
+                {% if have_posts() %}
+                               
+                     {% for post in posts %}
+                                                                            
+                        {% do setup_postdata(post) %}
+                
+                        <article>
+                            <header>
+                                <h1>{{ the_title() }}</h1>
+                                <p>{{ the_excerpt() }}</p>
+                            </header>
+                            <section>
+                                <h2>Article</h2>
+                                <p>{{ the_content() }}</p>
+                            </section>                            
+                        </article>
+                        
+                     {% endfor %}                                
+                
+                {% endif %}
+
+                {{ get_sidebar() }}
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <!-- start footer -->
+        {{ get_footer() }}
+        <!-- end footer -->
+
+    </body>
+</html>
