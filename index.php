@@ -39,11 +39,11 @@ get_header();
 
                 </div>
 
+                <div id="rightcol">
                 <?php get_sidebar() ?>
+                </div>
 
             </div>
-
-
 
         </div> <!-- #main -->
 

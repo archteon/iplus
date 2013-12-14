@@ -97,14 +97,14 @@ function iplus_404_template( $template ) {
             return $template;
         elseif( ($template = locate_template('404.twig')) != '' ){
             return $template;
-        }        
+        }
 	return $template;
 }
 add_filter( '404_template', 'iplus_404_template',  99 );
 
-function iplus_archive_template( $template ) {        
+function iplus_archive_template( $template ) {
         if($template!='')
-            echo $template;
+            return $template;
         elseif( ($template = locate_template('archive.twig')) != '' ){
             return $template;
         }        
@@ -202,7 +202,7 @@ function iplus_taxonomy_template( $template ) {
 add_filter( 'taxonomy_template', 'iplus_taxonomy_template',  99 );
 
 
-function iplus_search_template( $template ) {        
+function iplus_search_template( $template ) {
         if($template!='')
             return $template;
         elseif( ($template = locate_template('search.twig')) != '' ){

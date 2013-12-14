@@ -34,7 +34,9 @@
 
                 </div>
 
+                <div id="rightcol">
                 <?php get_sidebar() ?>
+                </div>
 
             </div> <!-- #main -->
         </div> <!-- #main-container -->

@@ -55,9 +55,11 @@ $wp_query = $q; //save query in global wp_query so that we can use template tags
 
                 </div>
 
+                <div id="rightcol">
                 <?php get_sidebar() ?>
+                </div>
 
-                 <!-- pagination -->
+                <!-- pagination -->
                 <section id="pagination" >
 
                     <?php if( intval($paged) + 1 <= $wp_query->max_num_pages ): ?>

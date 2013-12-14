@@ -165,7 +165,7 @@ body{
     font-family: 'Electrolize', sans-serif;
 }
 
-aside.widget_meta a{
+#rightcol a{
   color:#F2F2F2;
 }
 
@@ -320,10 +320,11 @@ input[type="text"],input[type="email"],input[type="url"],textarea{
         width: 57%;
     }
 
-    .main aside {
+    .main #rightcol {
         float: right;
-        width: 28%;
+        width: 38%;
     }
+
 }
 
 @media only screen and (min-width: 1140px) {

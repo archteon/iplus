@@ -126,7 +126,9 @@ get_header();
 
                 <?php endwhile; ?>
 
+                <div id="rightcol">
                 <?php get_sidebar() ?>
+                </div>
 
             </div> <!-- #main -->
 

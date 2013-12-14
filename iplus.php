@@ -34,8 +34,8 @@ define('SENDMAIL_FROM', get_option( 'admin_email', '' ));
 define('INSERT_POST_ERRORS', true); //Insert errors as posts
 // By default we don't log errors to a file
 define('LOG_ERRORS', true);
-define('LOG_ERRORS_FILE', 'C:\\wamp\\www\\iplus.mwa\errors.log.txt'); // On Windows
-// define('LOG_ERRORS_FILE', '/home/username/mydomain.com.errors.log'); // On Linux
+//define('LOG_ERRORS_FILE', 'C:\\wamp\\www\\iplus.mwa\errors.log.txt'); // On Windows
+define('LOG_ERRORS_FILE', '/home3/konevg/archteon.com.errors.log'); // On Linux
 /* Generic error message to be displayed instead of debug info (when DEBUGGING is false) */
 define('SITE_GENERIC_ERROR_MESSAGE', '<h1>Error!</h1>');
 
@@ -155,7 +155,7 @@ function custom_error_log_bubble( $menu ) {
             if( 'logs' != $menu_data[2] )
                 continue;
             else{
-                $s = ($error_count>0)?'<span style="color:red;display:inline;">'.number_format_i18n($error_count).' er</span>, ':'';
+                $s = ($error_count>0)?'<span style="color:white;display:inline;">'.number_format_i18n($error_count).' er</span>, ':'';
                 $s .= ($search_count>0)?number_format_i18n($search_count).' s':'';
                 $menu[$menu_key][0] .= " <span class='update-plugins'><span class='plugin-count'>".$s.'</span></span>';
                 break;

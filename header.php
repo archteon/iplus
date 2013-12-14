@@ -27,7 +27,11 @@
             <header class="wrapper clearfix">
                 <h1 class="title"><?php bloginfo('name') ?></h1>
                 <!-- start menu -->
-                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav') ); ?>
+                <?php
+                    if ( has_nav_menu( 'primary' ) ) {
+                        wp_nav_menu( array( 'theme_location' => 'primary', 'container' => 'nav') );
+                    }
+                ?>
             </header>
         </div>
 
